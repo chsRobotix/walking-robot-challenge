@@ -1,15 +1,13 @@
-// C++ code
-//
-void setup()
-{
-  pinMode(0, OUTPUT);
-  pinMode(1, OUTPUT);
-  
-  pinMode(12, OUTPUT);
-  pinMode(13, OUTPUT);
+#define RIGHT_MOTOR 2
+#define LEFT_MOTOR 12
+
+void setup() {
+    // Set the motor pins
+    pinMode(RIGHT_MOTOR, OUTPUT);
+    pinMode(LEFT_MOTOR, OUTPUT);
+
 }
 
-void loop()
-{
-  digitalWrite(0, HIGH);
+void loop() {
+    digitalWrite(RIGHT_MOTOR, LOW);
 }
